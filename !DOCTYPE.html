@@ -318,14 +318,12 @@ Las áreas con gran densidad de tráfico, son a menudo variables con el tiempo. 
 	   <li>Realiza la generación de señales mediante mapeo de bits, canalización y scrambling.</li>
 
 </ul>
-    	
+    	<p>Modelador de Canal:</p>
+	<ul>
 
-	<p>La forma generalizada de los algoritmos es similar y se expresa como w (k+1) = w (k) + anX (k) e* (k). donde an es un parámetro variable que regula la velocidad de convergencia y la estabilidad del algoritmo.</p>
-    	</section>
-
-	<p>Se realiza una simulación de los algoritmos utilizando MATLAB, considerando un arreglo lineal de 4 elementos con incidencia de señales de un usuario deseado y fuentes de interferencia. Se analiza la convergencia, el error 	cuadrático medio y el seguimiento a la señal deseada para cada algoritmo.</p>
-
-	<p>Los resultados de las simulaciones indican que los algoritmos RLS y RLS/LMS tienen una mayor convergencia, estabilizándose en menos de 10 muestras, mientras que el algoritmo LMS lo hace alrededor de las 300 muestras. Se 	concluye que la complejidad del sistema se mide en función de la cantidad de datos procesados, siendo el RLS el más complejo, seguido por el RLS/LMS, que ofrece una rápida convergencia de datos con menos hardware.</p>
+	<li>Consta de bloques VCIR y AWGN. El bloque VCIR modela las señales recibidas en el arreglo, y el bloque AWGN agrega ruido blanco gaussiano al canal.</li>
+    	<li>Emula los cambios que la señal experimentará al pasar por el canal.</li>
+</ul>
 </section>
 
 
