@@ -267,15 +267,25 @@ Las áreas con gran densidad de tráfico, son a menudo variables con el tiempo. 
 </p>
     </section>
 
+<section>
+        <h2>6.1 CONFORMACIÓN DEL HAZ DE DOWNLINK PARA SISTEMAS CDMA</h2>
+        <p>En un sistema CDMA (Acceso Múltiple por División de Código), la conformación de haces en el downlink es esencial para optimizar la transmisión de canales como sincronismo, piloto y paginación en todo el sector de la celda. Se 	emplean haces específicos para cada usuario en el canal de tráfico, reduciendo la potencia transmitida de la estación base y enfocándose en la potencia necesaria para el receptor correspondiente. Es crucial mantener los haces 	libres de lóbulos no deseados, lo que requiere una cuidadosa calibración de los arreglos de antenas, ya que cambios en fase o amplitud pueden generar interferencia en celdas adyacentes.</p>
 
-
-
-
+	<p>La utilización de antenas inteligentes en CDMA también permite la extensión del rango de cobertura, lo que significa que los dispositivos móviles pueden operar a distancias mayores de la estación base sin aumentar la potencia 	de transmisión. Se implementan señales piloto auxiliares para evitar distorsiones de fase entre la señal de tráfico y la señal piloto, y se destaca la importancia de la calibración periódica de los arreglos para mantener la 	calidad de la transmisión.</p>
+    </section>
 
 <section>
-        <h2>1. INTRODUCCIÓN</h2>
-        <p>Tu introducción va aquí...</p>
-    </section>
+        <h2>6.2 PRINCIPALES ALGORITMOS</h2>
+        <p>El algoritmo LMS utiliza la aproximación estocástica para calcular el gradiente de la función de costo MMSE (Minimum Mean Square Error) en sistemas adaptativos. Este método iterativo realiza correcciones sucesivas de los 	pesos, minimizando los errores cuadráticos medios. La actualización del vector de pesos se realiza mediante la expresión iterativa:  W (K+1)= W (K) +uLMSx e*(k), Donde u es una constante que controla la velocidad de 	convergencia, x (k) es el vector de entrada en el instante k; y   </p>
+
+	<h2>Algoritmo NLMS (Normal Least Mean Square):</h2>
+	<p>Para evitar problemas cuando los datos son demasiado grandes, se utiliza la normalización en el algoritmo NLMS. La actualización de los pesos se modifica utilizando la norma de los datos de entrada:  w(k + 1) = w(k) + u/|x 	(k)e*(k)</p>
+
+	<h2>Algoritmo RLS (Recursive Least Squares):</h2>
+	<p>El algoritmo RLS busca adaptarse rápidamente a cambios en el medio. Calcula directamente el vector de pesos a través de la ecuación de Wiener. Utiliza aproximaciones estocásticas de las matrices, actualizándolas 	recursivamente en cada iteración. La forma genérica del algoritmo RLS es: w(k) = (k-1) - σ RLSx (k)e*(k), donde σ es la inversa de la matriz de covarianza, y RLS se ajusta dinamicamente a los cambios en el medio</p>
+    	</section>
+
+
 
 
 
