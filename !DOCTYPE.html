@@ -284,12 +284,12 @@ Las áreas con gran densidad de tráfico, son a menudo variables con el tiempo. 
 	<h2>Algoritmo RLS (Recursive Least Squares):</h2>
 	<p>El algoritmo RLS busca adaptarse rápidamente a cambios en el medio. Calcula directamente el vector de pesos a través de la ecuación de Wiener. Utiliza aproximaciones estocásticas de las matrices, actualizándolas 	recursivamente en cada iteración. La forma genérica del algoritmo RLS es: w(k) = (k-1) - σ RLSx (k)e*(k), donde σ es la inversa de la matriz de covarianza, y RLS se ajusta dinamicamente a los cambios en el medio</p>
     	</section>
-
+<section>
 	<h2>Algoritmo con referencia espacial:</h2>
 	<p>Este enfoque utiliza algoritmos como MMSE, Max SNR y LCMV para encontrar los valores de los pesos, dependiendo de la aplicación. El beamforming de Varianza Mínima Restringida (LCMV) es utilizado cuando no es posible estimar 	la matriz de covarianza de la señal y del ruido. Aplica restricciones lineales al vector de pesos para minimizar las contribuciones no deseadas a la salida del sistema, permitiendo un mayor control sobre la respuesta adaptada 	del patrón de radiación de la antena inteligente.</p>
     	</section>
 
-
+<section>
 	<h2>6.3 SIMULACION DE UN ALGORITMO ADAPTATIVO PARA ANTENAS INTELIGENTES</h2>
         <p>Este extracto describe un estudio realizado por estudiantes de maestría de la Universidad de Tarapacá en Chile sobre algoritmos adaptativos para antenas inteligentes. Aquí se presentan los algoritmos LMS y RLS, y se propone 	un algoritmo híbrido (RLS/LMS) que combina las características favorables de ambos.</p>
 
@@ -302,6 +302,7 @@ Las áreas con gran densidad de tráfico, son a menudo variables con el tiempo. 
 	<p>Se realiza una simulación de los algoritmos utilizando MATLAB, considerando un arreglo lineal de 4 elementos con incidencia de señales de un usuario deseado y fuentes de interferencia. Se analiza la convergencia, el error 	cuadrático medio y el seguimiento a la señal deseada para cada algoritmo.</p>
 
 	<p>Los resultados de las simulaciones indican que los algoritmos RLS y RLS/LMS tienen una mayor convergencia, estabilizándose en menos de 10 muestras, mientras que el algoritmo LMS lo hace alrededor de las 300 muestras. Se 	concluye que la complejidad del sistema se mide en función de la cantidad de datos procesados, siendo el RLS el más complejo, seguido por el RLS/LMS, que ofrece una rápida convergencia de datos con menos hardware.</p>
+</section>
 
 
 
