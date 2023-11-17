@@ -324,6 +324,14 @@ Las áreas con gran densidad de tráfico, son a menudo variables con el tiempo. 
 	<li>Consta de bloques VCIR y AWGN. El bloque VCIR modela las señales recibidas en el arreglo, y el bloque AWGN agrega ruido blanco gaussiano al canal.</li>
     	<li>Emula los cambios que la señal experimentará al pasar por el canal.</li>
 </ul>
+
+	<p>Receptor:</p>
+	<ul>
+
+	<li>Compuesto por el bloque LMS y el bloque receptor monousuario.</li>
+    	<li>El bloque LMS combina señales que inciden en cada elemento de la antena, sumando versiones ponderadas de estas.</li>
+	<li>El bloque receptor monousuario desensancha la señal filtrada y recibida para reconstruir un estimado de la señal transmitida por el usuario deseado y cuenta los errores en cada trama recibida.</li>
+</ul>
 </section>
 
 
