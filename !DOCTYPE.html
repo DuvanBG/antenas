@@ -304,6 +304,31 @@ Las áreas con gran densidad de tráfico, son a menudo variables con el tiempo. 
 	<p>Los resultados de las simulaciones indican que los algoritmos RLS y RLS/LMS tienen una mayor convergencia, estabilizándose en menos de 10 muestras, mientras que el algoritmo LMS lo hace alrededor de las 300 muestras. Se 	concluye que la complejidad del sistema se mide en función de la cantidad de datos procesados, siendo el RLS el más complejo, seguido por el RLS/LMS, que ofrece una rápida convergencia de datos con menos hardware.</p>
 </section>
 
+<section>
+	<h2>6.4 ANTENAS INTELIGENTES CON APLICACIÓN EN SDMA</h2>
+        <p>Este fragmento describe un estudio llevado a cabo por el grupo de telecomunicaciones y señales de la Universidad del Norte en Barranquilla, Colombia. El objetivo del estudio es desarrollar un prototipo hardware/software de un 	sistema de antenas adaptativas que mejore la calidad de los enlaces de acceso a la red celular, con un enfoque específico en la técnica de Acceso Múltiple por División de Espacio.  (SDMA).
+
+	El sistema propuesto consta de tres bloques funcionales: el transmisor, el modelador de canal y el receptor.</p>
+
+	<p>Transmisor:</p>
+	<ul>
+	   <li>Genera chips para cada usuario, superponiéndolos en el canal según el ángulo de incidencia al arreglo de antenas.</li>
+
+	   <li>Utiliza sub-bloques que simulan los transmisores de los usuarios, generando tramas correspondientes a cada usuario.</li>
+
+	   <li>Realiza la generación de señales mediante mapeo de bits, canalización y scrambling.</li>
+
+</ul>
+    	
+
+	<p>La forma generalizada de los algoritmos es similar y se expresa como w (k+1) = w (k) + anX (k) e* (k). donde an es un parámetro variable que regula la velocidad de convergencia y la estabilidad del algoritmo.</p>
+    	</section>
+
+	<p>Se realiza una simulación de los algoritmos utilizando MATLAB, considerando un arreglo lineal de 4 elementos con incidencia de señales de un usuario deseado y fuentes de interferencia. Se analiza la convergencia, el error 	cuadrático medio y el seguimiento a la señal deseada para cada algoritmo.</p>
+
+	<p>Los resultados de las simulaciones indican que los algoritmos RLS y RLS/LMS tienen una mayor convergencia, estabilizándose en menos de 10 muestras, mientras que el algoritmo LMS lo hace alrededor de las 300 muestras. Se 	concluye que la complejidad del sistema se mide en función de la cantidad de datos procesados, siendo el RLS el más complejo, seguido por el RLS/LMS, que ofrece una rápida convergencia de datos con menos hardware.</p>
+</section>
+
 
 
 
