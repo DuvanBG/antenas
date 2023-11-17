@@ -14,7 +14,8 @@
         }
 
         header {
-            background-color: #3498db;
+            position: fixed;
+	    background-color: #3498db;
             color: #ecf0f1;
             padding: 20px;
             text-align: center;
@@ -41,6 +42,13 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             color: #333; /* Texto en negro */
         }
+	
+	main {
+            margin-top: 80px; /* Ajusta según la altura del header para evitar que el contenido se superponga */
+            width: 80%; /* Ajusta el ancho del contenido según tu preferencia */
+            max-width: 800px; /* Limita el ancho máximo del contenido */
+            text-align: center; /* Centra el contenido */
+        }
 
         footer {
             background-color: #3498db;
@@ -50,7 +58,9 @@
             position: fixed;
             bottom: 0;
             width: 100%;
+	    position: fixed;
         }
+
     </style>
 </head>
 <body>
@@ -59,7 +69,7 @@
         <p>AUTOR: ANDRÉS LEONARDO GONZÁLEZ GÓMEZ<br>
         UNIVERSIDAD PONTIFICIA BOLIVARIANA FACULTAD DE INGENIERÍA ELECTRÓNICA ESPECIALIZACIÓN EN TELECOMUNICACIONES BUCARAMANGA</p>
     </header>
-
+<main>
     <section>
         <h2>INTRODUCCIÓN</h2>
         <p>El crecimiento en el número de usuarios de servicios móviles, ha obligado a las compañías proveedoras, a incrementar su capacidad para mejorar la cobertura, el ancho de banda y la calidad de los servicios ofrecidos. Estos servicios, especialmente los de características multimedia, demandan altas tasas binarias lo cual, junto con el aumento en el número de usuarios, provoca un significativo incremento en el tráfico que se transmite por las redes.
@@ -465,9 +475,11 @@ Las áreas con gran densidad de tráfico, son a menudo variables con el tiempo. 
 	</style>
   </head>
   <body>
+  </main>
+
 <footer>
-        <p>© 2023 JUAN DUVAN BETANCOURT - TELECOMUNICACIONES</p>
-    </footer>
+   <p>© 2023 JUAN DUVAN BETANCOURT - TELECOMUNICACIONES - 10 SEMESTRE</p>
+</footer>
 </body>
 </html>
 
